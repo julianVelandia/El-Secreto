@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    
+    --c-verde-0: #161B22;
+    --c-gris-0: #E8E8E8;
+    --c-gris-1: #D1D1D1;
+    --c-azul-0: #1058D5;
+
+    --w-0: 2px;
+
+    --m-0:5px;
+
+    --f-0: 10px;
+    --f-1: 12px;
+
+    --b-0: 5px;
+
+    --s-0: 5px;
+
+    --h-10: 750px;
+}
+
+*{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: var(--color-Background);
+}
+
+.feed{
+    height: var(--h-10);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+}
+
+.feed-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.feed-nav-logo{}
+
+.feed-nav-logo h1{
+    font-size: var(--f-2);
+    color: white;
+
+}
+
+
+.feed-nav-text{}
+.feed-nav-text-item{}
+.feed-nav-text-img{}
+.feed-hero{}
+
+
