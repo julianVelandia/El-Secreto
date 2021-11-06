@@ -2,23 +2,51 @@
 
 :root {
     
-    --c-verde-0: #161B22;
     --c-gris-0: #E8E8E8;
     --c-gris-1: #D1D1D1;
-    --c-azul-0: #1058D5;
+    --c-azul-0: ##153463;
 
-    --w-0: 2px;
+    --m-1: 5px;
+    --m-2: 10px;
+    --m-3: 15px;
+    --m-4: 20px;
+    --m-5: 25px;
+    --m-6: 30px;
+    --m-7: 35px;
+    --m-8: 40px;
+    --m-9: 45px;
+    --m-10: 50px;
+    --m-15: 75px;
 
-    --m-0:5px;
+    --w-1: 5px;
+    --w-2: 7px;
+    --w-3: 10px;
+    --w-4: 12px;
+    --w-5: 15px;
+    --w-6: 20px;
+    --w-7: 25px;
+    --w-8: 30px;
+    --w-9: 35px;
+    --w-10: 40px;
+    --w-15: 60px;
+    --w-20: 80px;
 
-    --f-0: 10px;
-    --f-1: 12px;
+    --b-2: 10px;
+    --b-5: 20px;
 
-    --b-0: 5px;
+    --f-1: 5px;
+    --f-2: 7px;
+    --f-3: 10px;
+    --f-4: 12px;
+    --f-5: 15px;
+    --f-6: 17px;
+    --f-7: 20px;
+    --f-8: 25px;
+    --f-9: 30px;
+    --f-10: 35px;
 
-    --s-0: 5px;
 
-    --h-10: 750px;
+    --h-10: 550px;
 }
 
 *{
@@ -29,35 +57,173 @@
     background-color: var(--color-Background);
 }
 
-.feed{
-    height: var(--h-10);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url("../img/fondo.png");
-    background-repeat: no-repeat;
-}
 
-.feed-nav{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: auto;
     width: 100%;
+    background-color: white;
+    border-radius: 0 0 var(--b-5)  var(--b-5);
+    position: fixed;
 }
 
-.feed-nav-logo{}
+.nav-logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.feed-nav-logo h1{
-    font-size: var(--f-2);
+.nav-logo img{
+    margin: var(--m-3);
+    width: var(--w-5);
+    padding: 0;
+}
+
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-menu-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-menu-img img{
+    margin: var(--m-3);
+    width: var(--w-5);
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.feed-text{
+
+    padding: 0;
+    margin: 0;
+    margin-top: var(--m-15);
+    margin-bottom: var(--m-5);
+    width: 65%;
     color: white;
-
+    font-size: var(--f-8);
+    font-weight: bold;
+    text-align: center;
 }
 
+.feed-card{
+    margin: 0;
+    margin-bottom: var(--m-5);
+    margin-top: 0;
+    padding: 0;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.75);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: var(--b-2);
+}
 
-.feed-nav-text{}
-.feed-nav-text-item{}
-.feed-nav-text-img{}
-.feed-hero{}
+.feed-card-text{
+    padding: 0;
+    margin: var(--m-3);
+ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
+.feed-card-text h1{
+    color: var(--c-azul-0);
+    font-size: var(--f-4);
+    font-weight: bold;
+    margin: var(--m-1);
+    padding: 0;
+    text-align: left;
+}
 
+.feed-card-text h2{
+    color: var(--c-azul-0);
+    font-size: var(--f-3);
+    font-weight: normal;
+    margin: var(--m-1);
+    padding: 0;
+    text-align: left;
+}
+
+.feed-card-img{
+    width: var(--w-15);
+    margin: var(--m-2);
+    padding: 0;
+    border-radius: var(--b-2);
+}
