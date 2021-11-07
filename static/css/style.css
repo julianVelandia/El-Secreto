@@ -4,7 +4,8 @@
     
     --c-gris-0: #E8E8E8;
     --c-gris-1: #D1D1D1;
-    --c-azul-0: ##153463;
+    --c-azul-0: #153463;
+    --c-rojo-0: #E50112;
 
     --m-1: 5px;
     --m-2: 10px;
@@ -28,9 +29,12 @@
     --w-8: 30px;
     --w-9: 35px;
     --w-10: 40px;
-    --w-15: 60px;
+    --w-17: 70px;
     --w-20: 80px;
+    --w-25: 130px;
+    --w-30: 160px;
 
+    --b-1: 2px;
     --b-2: 10px;
     --b-5: 20px;
 
@@ -85,7 +89,6 @@
     width: 100%;
     background-color: white;
     border-radius: 0 0 var(--b-5)  var(--b-5);
-    position: fixed;
 }
 
 .nav-logo{
@@ -98,7 +101,7 @@
 
 .nav-logo img{
     margin: var(--m-3);
-    width: var(--w-5);
+    width: var(--w-10);
     padding: 0;
 }
 
@@ -131,10 +134,81 @@
 
 .nav-menu-img img{
     margin: var(--m-3);
-    width: var(--w-5);
+    width: var(--w-10);
     padding: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: var(--m-6) var(--m-5) var(--m-6) var(--m-5);
+}
+
+.hero-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    width: var(--w-30);
+}
+
+.hero-text h1{
+    font-size: var(--f-7);
+    color: black;
+    font-weight: bold;
+   
+    margin: 0;
+    margin-bottom: var(--m-3);
+    padding: 0;
+    width: 100%;
+}
+
+
+.hero-text h1 span{
+    color: var(--c-rojo-0);
+}
+
+.hero-text h2{
+    font-size: var(--f-5);
+    color: black;
+    font-weight: normal;
+    margin: 0;
+    width: 90%;
+
+    padding: 0;
+}
+
+.hero-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--m-2);
+    margin: 0;
+    text-decoration: none;
+    border-radius: var(--b-2);
+    border: solid  var(--b-1) var(--c-rojo-0);
+    color: var(--c-rojo-0);
+    font-size: var(--f-3);
+    font-weight: normal;
+
+}
 
 
 
@@ -170,11 +244,11 @@
 
     padding: 0;
     margin: 0;
-    margin-top: var(--m-15);
+    margin-top: var(--m-5);
     margin-bottom: var(--m-5);
-    width: 65%;
+    width: 100%;
     color: white;
-    font-size: var(--f-8);
+    font-size: var(--f-7);
     font-weight: bold;
     text-align: center;
 }
@@ -184,8 +258,8 @@
     margin-bottom: var(--m-5);
     margin-top: 0;
     padding: 0;
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.75);
+    width: 80%;
+    background-color: white;
     
     display: flex;
     justify-content: space-between;
@@ -196,7 +270,7 @@
 .feed-card-text{
     padding: 0;
     margin: var(--m-3);
- 
+    width: var(--w-30);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -204,8 +278,8 @@
 }
 
 .feed-card-text h1{
-    color: var(--c-azul-0);
-    font-size: var(--f-4);
+    color: black;
+    font-size: var(--f-5);
     font-weight: bold;
     margin: var(--m-1);
     padding: 0;
@@ -213,7 +287,7 @@
 }
 
 .feed-card-text h2{
-    color: var(--c-azul-0);
+    color: black;
     font-size: var(--f-3);
     font-weight: normal;
     margin: var(--m-1);
@@ -222,8 +296,326 @@
 }
 
 .feed-card-img{
-    width: var(--w-15);
+    
+    height: var(--w-25);
     margin: var(--m-2);
     padding: 0;
     border-radius: var(--b-2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 1195px) {
+    :root {
+        --m-1: 25px;
+            --m-2: 30px;
+            --m-3: 35px;
+            --m-4: 40px;
+            --m-5: 45px;
+            --m-6: 52px;
+            --m-7: 57px;
+            --m-8: 65px;
+            --m-9: 70px;
+            --m-10: 75px;
+            --m-15: 110px;
+        
+            --w-1: 30px;
+            --w-2: 32px;
+            --w-3: 35px;
+            --w-4: 37px;
+            --w-5: 45px;
+            --w-6: 50px;
+            --w-7: 55px;
+            --w-8: 62px;
+            --w-9: 70px;
+            --w-10: 77px;
+            --w-17: 140px;
+            --w-20: 150px;
+            --w-25: 320px;
+
+
+
+            --w-30: 700px;
+        
+            --b-1: 5.5px;
+            --b-2: 16px;
+            --b-5: 26px;
+        
+            --f-1: 32px;
+            --f-2: 37px;
+            --f-3: 42px;
+            --f-4:47px;
+            --f-5: 52px;
+            --f-6: 57px;
+            --f-7: 62px;
+            --f-8: 67px;
+            --f-9: 77px;
+            --f-10: 87px;
+        
+            --h-10: 800px;
+    
+    }
+
+}
+
+
+@media (max-width: 1194px) and  (min-width: 900px) {
+    :root {
+        --m-1: 20px;
+            --m-2: 25px;
+            --m-3: 30px;
+            --m-4: 35px;
+            --m-5: 40px;
+            --m-6: 47px;
+            --m-7: 52px;
+            --m-8: 60px;
+            --m-9: 65px;
+            --m-10: 70px;
+            --m-15: 100px;
+        
+            --w-1: 25px;
+            --w-2: 27px;
+            --w-3: 30px;
+            --w-4: 32px;
+            --w-5: 40px;
+            --w-6: 45px;
+            --w-7: 50px;
+            --w-8: 57px;
+            --w-9: 65px;
+            --w-10: 72px;
+            --w-17: 130px;
+            --w-20: 140px;
+            --w-25: 290px;
+            --w-30: 600px;
+        
+            --b-1: 5px;
+            --b-2: 15px;
+            --b-5: 25px;
+        
+            --f-1: 22px;
+            --f-2: 27px;
+            --f-3: 32px;
+            --f-4:37px;
+            --f-5: 42px;
+            --f-6: 47px;
+            --f-7: 52px;
+            --f-8: 57px;
+            --f-9: 62px;
+            --f-10: 70px;
+        
+            --h-10: 750px;
+    
+    }
+    }
+    
+    
+    @media (max-width: 899px) and  (min-width: 700px) {
+        :root {
+            --m-1: 15px;
+            --m-2: 20px;
+            --m-3: 25px;
+            --m-4: 30px;
+            --m-5: 35px;
+            --m-6: 42px;
+            --m-7: 47px;
+            --m-8: 52px;
+            --m-9: 57px;
+            --m-10: 62px;
+            --m-15: 90px;
+        
+            --w-1: 17px;
+            --w-2: 20px;
+            --w-3: 22px;
+            --w-4: 25px;
+            --w-5: 32px;
+            --w-6: 37px;
+            --w-7: 42px;
+            --w-8: 47px;
+            --w-9: 52px;
+            --w-10: 60px;
+            --w-17: 105px;
+            --w-20: 115px;
+            --w-25: 220px;
+
+            --w-30: 470px;
+        
+            --b-1: 4px;
+            --b-2: 14px;
+            --b-5: 24px;
+        
+            --f-1: 17px;
+            --f-2: 20px;
+            --f-3: 22px;
+            --f-4:25px;
+            --f-5: 30px;
+            --f-6: 35px;
+            --f-7: 40px;
+            --f-8: 45px;
+            --f-9: 50px;
+            --f-10: 60px;
+        
+            --h-10: 700px;
+        }
+        }
+    
+    @media (max-width: 699px) and  (min-width: 520px) {
+        :root {
+            --m-1: 12px;
+            --m-2: 17px;
+            --m-3: 22px;
+            --m-4: 27px;
+            --m-5: 32px;
+            --m-6: 37px;
+            --m-7: 42px;
+            --m-8: 47px;
+            --m-9: 52px;
+            --m-10: 57px;
+            --m-15: 82px;
+        
+            --w-1: 12px;
+            --w-2: 15px;
+            --w-3: 17px;
+            --w-4: 22px;
+            --w-5: 27px;
+            --w-6: 32px;
+            --w-7: 37px;
+            --w-8: 42px;
+            --w-9: 47px;
+            --w-10: 52px;
+            --w-17: 95px;
+            --w-20: 100px;
+            --w-25: 130px;
+
+            --w-30: 350px;
+        
+            --b-1: 3.5px;
+            --b-2: 13px;
+            --b-5: 23px;
+        
+            --f-1: 12px;
+            --f-2: 15px;
+            --f-3: 17px;
+            --f-4: 20px;
+            --f-5: 25px;
+            --f-6: 30px;
+            --f-7: 35px;
+            --f-8: 40px;
+            --f-9: 45px;
+            --f-10: 50px;
+        
+            --h-10: 650px;
+        }
+    }
+    
+    @media (max-width: 519px) and  (min-width: 375px) {
+        :root {
+            --m-1: 9px;
+            --m-2: 14px;
+            --m-3: 19px;
+            --m-4: 24px;
+            --m-5: 29px;
+            --m-6: 34px;
+            --m-7: 39px;
+            --m-8: 44px;
+            --m-9: 45px;
+            --m-10: 54px;
+            --m-15: 19px;
+        
+            --w-1: 7px;
+            --w-2: 10px;
+            --w-3: 12px;
+            --w-4: 15px;
+            --w-5: 20px;
+            --w-6: 25px;
+            --w-7: 30px;
+            --w-8: 35px;
+            --w-9: 40px;
+            --w-10: 45px;
+            --w-17: 75px;
+            --w-20: 85px;
+            --w-25: 100px;
+
+            --w-30: 235px;
+        
+            --b-1: 3px;
+            --b-2: 12px;
+            --b-5: 22px;
+        
+            --f-1: 6px;
+            --f-2: 9px;
+            --f-3: 11px;
+            --f-4: 14px;
+            --f-5: 16px;
+            --f-6: 19px;
+            --f-7: 24px;
+            --f-8: 29px;
+            --f-9: 34px;
+            --f-10: 39px;
+        
+            --h-10: 600px;
+        }
+    }
+    
+    
+    @media (max-width: 374px)  {
+        :root {
+            --m-1: 5px;
+            --m-2: 10px;
+            --m-3: 15px;
+            --m-4: 20px;
+            --m-5: 25px;
+            --m-6: 30px;
+            --m-7: 35px;
+            --m-8: 40px;
+            --m-9: 45px;
+            --m-10: 50px;
+            --m-15: 75px;
+        
+            --w-1: 5px;
+            --w-2: 7px;
+            --w-3: 10px;
+            --w-4: 12px;
+            --w-5: 15px;
+            --w-6: 20px;
+            --w-7: 25px;
+            --w-8: 30px;
+            --w-9: 35px;
+            --w-10: 40px;
+            --w-17: 70px;
+            --w-20: 80px;
+            --w-25: 90px;
+
+            --w-30: 200px;
+        
+            --b-1: 2px;
+            --b-2: 10px;
+            --b-5: 20px;
+        
+            --f-1: 5px;
+            --f-2: 7px;
+            --f-3: 10px;
+            --f-4: 12px;
+            --f-5: 15px;
+            --f-6: 17px;
+            --f-7: 20px;
+            --f-8: 25px;
+            --f-9: 30px;
+            --f-10: 35px;
+        
+        
+            --h-10: 550px;
+
+
+    
+        }
+    }
