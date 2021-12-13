@@ -394,8 +394,7 @@ bottom: 10%;
 
 .video iframe{
     margin: 0;
-    width: 60%;
-    height: var(--w-25);
+
     padding: 0;
 }
 
@@ -629,7 +628,8 @@ bottom: 10%;
             --m-8: 44px;
             --m-9: 45px;
             --m-10: 54px;
-            --m-15: 19px;
+            --m-15: 85px;
+
         
             --w-1: 7px;
             --w-2: 10px;
